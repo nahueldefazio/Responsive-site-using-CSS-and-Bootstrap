@@ -91,11 +91,15 @@ a{
   color: $cuartoColor;
   background-color: white;
   border: none !important;
-
 }
 
 .precio{
   color: $cuartoColor;
+}
+
+footer{
+  position: fixed;
+  bottom: 0;
 }
 
 @media (min-width: 375px) {

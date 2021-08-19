@@ -93,6 +93,11 @@ a {
   color: #7280a7;
 }
 
+footer {
+  position: fixed;
+  bottom: 0;
+}
+
 @media (min-width: 375px) {
   .card {
     width: 30rem !important;
