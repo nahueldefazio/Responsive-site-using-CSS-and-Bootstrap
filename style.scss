@@ -1,0 +1,123 @@
+//Colores
+$primerColor: hsl(225, 100%, 94%);
+$segundoColor:hsl(245, 75%, 52%);
+$tercerColor: hsl(225, 100%, 98%);
+$cuartoColor: hsl(224, 23%, 55%);
+$quintoColor: hsl(223, 47%, 23%);
+
+//Fuentes
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+$fuente: 'Red Hat Display', sans-serif;
+
+*{
+  margin: 0;
+  padding: 0;
+}
+h5{
+  font-weight: 900;
+}
+.bordes{
+  border-radius:  20px;
+}
+
+.centrar-texto{
+  text-align: center;
+}
+
+.izquierda{
+  float: left;
+}
+
+.derecha{
+  float: right;
+}
+body{
+  background: hsl(225, 100%, 94%) url("../images/pattern-background-desktop.svg") no-repeat center top;
+  font-family: $fuente;
+}
+
+
+.titulo{
+  margin-top: 15px;
+}
+.subtitulo{
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-right: 30px;
+}
+.parrafo{
+  font-size: 16px;
+  color: $cuartoColor;
+  margin: 15px 15px 25px 15px;
+}
+.color{
+  background-color: $tercerColor;
+  padding: 20px;
+}
+
+.conteiner{
+  margin-top: 20px;
+}
+
+a{
+  margin: 2px;
+  color: $segundoColor;
+  font-weight: bold;
+  font-size: 15px
+}
+
+.centrar{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img{
+  border-radius: 15px 15px 0 0;
+}
+
+.button1{
+  border-radius: 10px;
+  font-weight: 700;
+  padding: 10px;
+  background-color: $segundoColor;
+  border: none !important;
+}
+.button2{
+  border-radius: 10px;
+  font-weight: 700;
+  padding: 10px;
+  color: $cuartoColor;
+  background-color: white;
+  border: none !important;
+
+}
+
+.precio{
+  color: $cuartoColor;
+}
+
+@media (min-width: 375px) {
+  .card{
+    width: 30rem !important;
+  }
+  .titulo{
+    font-size: 30px;
+    margin-top: 30px;
+  }
+  .parrafo {
+    font-size: 18px;
+    color: #7280a7;
+    margin: 15px 60px 25px 60px;
+  }
+  .color{
+    margin: 40px;
+  }
+  .conteiner-precio{
+    padding-right: 50px;
+  }
+  .button1{
+    width: 350px;
+  }
+}
